@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: black;
+}
+
+
+button{
+  width: 100%;
+  padding: 2rem;
+  background-color: aquamarine;
+  color: black;
+  font-size: 2rem;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2.5rem;
+
+}
+
+.click-entry{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 200px;
+}
+
+/* .click-data{
+  display: flex;
+  flex-direction: column;
+} */

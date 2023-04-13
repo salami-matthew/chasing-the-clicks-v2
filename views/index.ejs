@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Chasing the Clicks</title>
+</head>
+
+<body>
+  <h1>Total Click Count</h1>
+  <h1 id="output"><%= clickCount %></h1>
+  <form action="/" method="post"><button type="submit" id="btn">Click Me</button></form>
+  
+
+  <h2>Click Distribution</h2>
+
+  <div class="click-data">
+    <% foundCountries.forEach(country => { %>
+      <span class="click-entry">
+        <h2 id="location"><%= country.name %></h2>
+        <h2 id="locationOutput"><%= country.clicks %></h2>
+      </span>
+    
+    <% }) %>
+  </div>  
+</body>
+
+</html>
