@@ -6,7 +6,9 @@ app.use(express.static("public"));
 
 
 // database default code block
-mongoose.connect('mongodb+srv://admin-matthew:z2qHNWg2f8jc5RlG@cluster0.ukiqfyq.mongodb.net/countryDB');
+const user = process.env.user;
+const password = process.env.password;
+mongoose.connect("mongodb+srv://" + user + ":" + password + "@cluster0.ukiqfyq.mongodb.net/countryDB");
 
 const countrySchema = {
   name: String,
